@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47817994-4cdc-46f3-833f-b3baf69e96df" name="Default Changelist" comment="" />
+    <list default="true" id="47817994-4cdc-46f3-833f-b3baf69e96df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            <state relative-caret-position="165">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -25,15 +27,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1095" />
+            <state relative-caret-position="195">
+              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="111">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -54,8 +58,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/output.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.txt" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/outputs.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py" />
       </list>
     </option>
@@ -72,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,6 +96,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,13 +165,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25324675" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25324675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.13149351" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1525974" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -198,9 +202,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -208,17 +209,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/output.txt" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="111">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -227,7 +229,9 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1095" />
+        <state relative-caret-position="195">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
       </provider>
     </entry>
   </component>
