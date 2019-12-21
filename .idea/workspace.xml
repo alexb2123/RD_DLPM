@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47817994-4cdc-46f3-833f-b3baf69e96df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DLPM_Global.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DLPM_local.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_local.py">
+        <entry file="file://$PROJECT_DIR$/DLPM_local.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="495">
+              <caret line="38" column="52" lean-forward="true" selection-start-line="31" selection-end-line="38" selection-end-column="52" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -24,14 +26,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_Global.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+            <state>
+              <caret column="184" selection-start-column="184" selection-end-column="184" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DLPM_Global.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="73" column="52" selection-start-line="45" selection-end-line="73" selection-end-column="52" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5342">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -54,10 +83,14 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/outputs.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/DLPM_local.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/DLPM_Global.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.txt" />
       </list>
     </option>
   </component>
@@ -73,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,6 +126,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch_9 (1)">
+  <component name="RunManager" selected="Python.DLPM_Global">
     <configuration name="DLPM_Global" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DLPM_generator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,9 +211,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scratch_9 (1)" />
         <item itemvalue="Python.DLPM_Global" />
         <item itemvalue="Python.scratch_9" />
+        <item itemvalue="Python.scratch_9 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -200,18 +233,18 @@
   <component name="ToolWindowManager">
     <frame x="11" y="23" width="1257" height="708" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2184466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23624596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3198052" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3198052" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.7418831" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.49675325" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -223,28 +256,7 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/output.txt" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="93" column="7" lean-forward="true" selection-start-line="5" selection-end-line="93" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs_cardinal.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-877" />
@@ -253,7 +265,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs_hamBeach.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs.txt" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs_IMUSA.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -264,20 +275,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_local.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/file_name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DLPM_local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="31" selection-end-line="38" selection-end-column="52" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_Global.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        <state relative-caret-position="120">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="184" selection-start-column="184" selection-end-column="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/outputs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5342">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DLPM_Conditionals.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DLPM_Global.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="73" column="52" selection-start-line="45" selection-end-line="73" selection-end-column="52" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
