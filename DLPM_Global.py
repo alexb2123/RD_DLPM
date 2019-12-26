@@ -13,12 +13,12 @@ with open('outputs.txt', 'a+') as f:
         last_price, DLPM_cost, item, effective_date = row
         if pd.isnull(item) or pd.isnull(DLPM_cost):
             break
-#Future price increase
-        if DLPM_cost > last_price and effective_date.floor('D') > time:
+#Future price change
+        if DLPM_cost > last_price or DLPM_cost < last_price and effective_date.floor('D') > time:
             DLPM_syntax = ['key PA2', 'type DLPM#', 'key Enter', 'key tab', 'type ' + str(int(item)), 'key tab', 'key delete', 'key delete', 'type h',
                            'key enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')), 'key CursorDown', 'key CursorDown', 'key CursorDown',
                            'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
-                           'key CursorDown', 'type '+ str(float(DLPM_cost)), 'key enter', 'type y', 'key enter',
+                           'key CursorDown', 'type ' + str(float(DLPM_cost)), 'key enter', 'type y', 'key enter',
                            'type ' + str(dt.datetime.strftime(effective_date, '%m%d%y')), 'key enter', 'key enter', 'key enter', 'key pf1', 'key Enter', 'key Enter', 'key Enter', 'key Enter',
                            'key tab', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
                            'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'key Enter', 'key tab', 'type y', 'type y', 'type y',
@@ -28,21 +28,7 @@ with open('outputs.txt', 'a+') as f:
                            'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
                            'type y', 'key Enter', 'key PF6']
             f.write(('\n'.join(DLPM_syntax) + '\n'))
-#future price drop
-        if DLPM_cost < last_price and effective_date.floor('D') > time:
-            DLPM_syntax = ['key PA2', 'type DLPM#', 'key Enter', 'key tab', 'type ' + str(int(item)), 'key tab', 'key delete', 'key delete', 'type h',
-                           'key enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')), 'key CursorDown', 'key CursorDown', 'key CursorDown',
-                           'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
-                           'key CursorDown', 'type '+ str(float(DLPM_cost)), 'key enter', 'type y', 'key enter',
-                           'type ' + str(dt.datetime.strftime(effective_date, '%m%d%y')), 'key enter', 'key enter', 'key enter', 'key pf1', 'key Enter', 'key Enter', 'key Enter', 'key Enter',
-                           'key tab', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
-                           'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'key Enter', 'key tab', 'type y', 'type y', 'type y',
-                           'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
-                           'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'key enter', 'key tab', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
-                           'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'key Enter', 'key tab',
-                           'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
-                           'type y', 'key Enter', 'key PF6']
-            f.write(('\n'.join(DLPM_syntax) + '\n'))
+
 #immediate price decrease
         if DLPM_cost < last_price and ((effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
             DLPM_syntax = ['key PA2', 'type DLPM#', 'key Enter','key Tab', 'type ' + str(int(item)), 'key Tab', 'key Delete', 'key Delete', 'type h',
