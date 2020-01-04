@@ -8,7 +8,7 @@ time = dt.date.today()
 
 '''print statement'''
 
-with open('outputs.txt', 'a+') as f:
+with open('output_local.txt', 'a+') as f:
     for _, row in df.iterrows():
         item, last_price, DLPM_cost, effective_date = row
         if pd.isnull(item) or pd.isnull(DLPM_cost):

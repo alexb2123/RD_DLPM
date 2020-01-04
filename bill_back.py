@@ -4,7 +4,7 @@ import datetime as dt
 
 '''data frame being used'''
 
-df = pd.read_excel(open('/Users/alexandrubordei/Downloads/try6.xlsx','rb'), sheet_name='Sheet1', usecols="B, R, S, T")
+df = pd.read_excel(open('/Users/alexandrubordei/Downloads/Vendor Pricing Template-20.xlsx','rb'), sheet_name='Main', usecols="B, R, S, T")
 time = dt.date.today()
 
 '''print statement'''
@@ -16,7 +16,7 @@ with open('bill_back_output.txt', 'a+') as f:
             break
         bill_back_syntax = ['key Tab', 'type ' + str(int(item)), 'key Tab', 'key Delete', 'key Delete', 'key delete', 'key delete', 'key delete', 'type an', 'type a', 'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')), 'type ' + str(dt.datetime.strftime(end_date, '%x')),
                             'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown', 'key Tab', 'type 999999', 'key tab',
-                            'type ' + str(float(bill_back)), 'key Enter', 'key Enter', 'key Enter', 'key tab', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
+                            'type ' + str(float(bill_back)), 'key Enter', 'key Enter', 'key tab', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
                             'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'key Enter', 'key tab', 'type y', 'type y', 'type y',
                             'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
                             'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'key enter', 'key tab', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y', 'type y',
