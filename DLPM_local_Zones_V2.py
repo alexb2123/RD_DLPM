@@ -22,6 +22,86 @@ def DLPM_local(df):
             if pd.isnull(item) or pd.isnull(DLPM_cost):
                 break
             if zone == 'NE':
+                for store in practice_dict.get('NE'):
+                    # Future price change
+                    if DLPM_cost > last_price or DLPM_cost < last_price and effective_date.floor('D') > time:
+                        DLPM_syntax = ['key tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key tab',
+                                       'key delete', 'key delete', 'type h',
+                                       'key enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')),
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown',
+                                       'key CursorDown', 'type ' + str(float(DLPM_cost)), 'key enter', 'type y',
+                                       'key enter',
+                                       'type ' + str(dt.datetime.strftime(effective_date, '%m%d%y')), 'key enter',
+                                       'key enter', 'key enter', 'key pf1', 'key enter', 'key enter', 'key enter']
+                        f.write(('\n'.join(DLPM_syntax) + '\n'))
+                    # immediate price inrease
+                    if DLPM_cost < last_price and (
+                            (effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
+                        DLPM_syntax = ['key Tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key Tab',
+                                       'key Delete', 'key Delete', 'type h',
+                                       'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')),
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown',
+                                       'key CursorDown', 'type ' + str(float(DLPM_cost)), 'key Enter', 'key PF1',
+                                       'key Enter',
+                                       'key Enter', 'key Enter']
+                        f.write(('\n'.join(DLPM_syntax) + '\n'))
+                    # Immediate price derease
+                    if DLPM_cost > last_price and (
+                            (effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
+                        DLPM_syntax = ['key Tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key Tab',
+                                       'key Delete', 'key Delete', 'type h',
+                                       'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')),
+                                       'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'type ' + str(float(DLPM_cost)),
+                                       'key Enter', 'key PF1', 'key Enter', 'key Enter', 'key Enter']
+                        f.write(('\n'.join(DLPM_syntax) + '\n'))
+            elif zone == 'NJP':
+                for store in practice_dict.get('NJP'):
+                    # Future price change
+                    if DLPM_cost > last_price or DLPM_cost < last_price and effective_date.floor('D') > time:
+                        DLPM_syntax = ['key tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key tab',
+                                       'key delete', 'key delete', 'type h',
+                                       'key enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')),
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown',
+                                       'key CursorDown', 'type ' + str(float(DLPM_cost)), 'key enter', 'type y',
+                                       'key enter',
+                                       'type ' + str(dt.datetime.strftime(effective_date, '%m%d%y')), 'key enter',
+                                       'key enter', 'key enter', 'key pf1', 'key enter', 'key enter', 'key enter']
+                        f.write(('\n'.join(DLPM_syntax) + '\n'))
+                    # immediate price inrease
+                    if DLPM_cost < last_price and (
+                            (effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
+                        DLPM_syntax = ['key Tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key Tab',
+                                       'key Delete', 'key Delete', 'type h',
+                                       'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')),
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown',
+                                       'key CursorDown', 'type ' + str(float(DLPM_cost)), 'key Enter', 'key PF1',
+                                       'key Enter',
+                                       'key Enter', 'key Enter']
+                        f.write(('\n'.join(DLPM_syntax) + '\n'))
+                    # Immediate price derease
+                    if DLPM_cost > last_price and (
+                            (effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
+                        DLPM_syntax = ['key Tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key Tab',
+                                       'key Delete', 'key Delete', 'type h',
+                                       'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')),
+                                       'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'key CursorDown', 'key CursorDown', 'key CursorDown',
+                                       'type ' + str(float(DLPM_cost)),
+                                       'key Enter', 'key PF1', 'key Enter', 'key Enter', 'key Enter']
+                        f.write(('\n'.join(DLPM_syntax) + '\n'))
+            elif zone == 'test':
                 for store in practice_dict.get('test'):
 #Future price change
                     if DLPM_cost > last_price or DLPM_cost < last_price and effective_date.floor('D') > time:
@@ -31,7 +111,7 @@ def DLPM_local(df):
                                        'key CursorDown', 'type '+ str(float(DLPM_cost)), 'key enter', 'type y', 'key enter',
                                        'type ' + str(dt.datetime.strftime(effective_date, '%m%d%y')), 'key enter', 'key enter', 'key enter', 'key pf1', 'key enter', 'key enter', 'key enter']
                         f.write(('\n'.join(DLPM_syntax) + '\n'))
-#immediate pricerease
+#immediate price inrease
                     if DLPM_cost < last_price and ((effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
                         DLPM_syntax = ['key Tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key Tab', 'key Delete', 'key Delete', 'type h',
                                        'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')), 'key CursorDown', 'key CursorDown', 'key CursorDown',
@@ -39,7 +119,7 @@ def DLPM_local(df):
                                        'key CursorDown', 'type ' + str(float(DLPM_cost)), 'key Enter', 'key PF1', 'key Enter',
                                        'key Enter', 'key Enter']
                         f.write(('\n'.join(DLPM_syntax) + '\n'))
-#Immediate pricerease
+#Immediate price derease
                     if DLPM_cost > last_price and ((effective_date.floor('D') == time) or (effective_date.floor('D') <= time)):
                         DLPM_syntax = ['key Tab', 'type ' + str(int(store)), 'type ' + str(int(item)), 'key Tab', 'key Delete', 'key Delete', 'type h',
                                        'key Enter', 'type ' + str(dt.datetime.strftime(effective_date, '%x')), 'key CursorDown', 'key CursorDown',
